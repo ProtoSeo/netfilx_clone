@@ -44,7 +44,7 @@ List<Widget> makeBoxImages(BuildContext context, List<Movie> movies) {
         },
         child: Container(
           padding: EdgeInsets.only(right: 10),
-          child: Image.asset('images/' + movies[i].poster),
+          child: Image.network(movies[i].poster),
         )));
   }
   return results;
